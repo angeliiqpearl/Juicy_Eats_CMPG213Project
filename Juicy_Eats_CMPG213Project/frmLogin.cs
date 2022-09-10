@@ -44,8 +44,20 @@ namespace Juicy_Eats_CMPG213Project
 
         private void button1_Click(object sender, EventArgs e)
         {
-            frmManager myForm = new frmManager();
-            myForm.Show();
+            string mName = txtNum.Text.ToLower();
+            string mPassword = txtPassword.Text.ToLower();
+
+            //verify manager name and password
+            if (mName == "ndlovuthulani" && mPassword == "constance")
+            {
+                frmManager myForm = new frmManager();
+                myForm.Show();
+            }
+
+            else
+            {
+                MessageBox.Show("INCORRECT NAME/PASSWORD!");
+            }
         }
 
         private void button2_Click(object sender, EventArgs e)
