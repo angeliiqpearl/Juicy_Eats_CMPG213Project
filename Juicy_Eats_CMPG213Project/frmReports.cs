@@ -65,5 +65,15 @@ namespace Juicy_Eats_CMPG213Project
         {
 
         }
+
+        private void rbAscending_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rbDescending_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

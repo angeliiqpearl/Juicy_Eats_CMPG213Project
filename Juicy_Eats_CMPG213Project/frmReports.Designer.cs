@@ -38,13 +38,17 @@
             this.gbTotals = new System.Windows.Forms.GroupBox();
             this.rbYes = new System.Windows.Forms.RadioButton();
             this.rbNo = new System.Windows.Forms.RadioButton();
+            this.gbOrderBy = new System.Windows.Forms.GroupBox();
+            this.rbDescending = new System.Windows.Forms.RadioButton();
+            this.rbAscending = new System.Windows.Forms.RadioButton();
             this.gbDetails.SuspendLayout();
             this.gbTotals.SuspendLayout();
+            this.gbOrderBy.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(482, 367);
+            this.btnCancel.Location = new System.Drawing.Point(459, 325);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(107, 44);
             this.btnCancel.TabIndex = 0;
@@ -54,7 +58,7 @@
             // 
             // btnCreate
             // 
-            this.btnCreate.Location = new System.Drawing.Point(631, 367);
+            this.btnCreate.Location = new System.Drawing.Point(627, 325);
             this.btnCreate.Name = "btnCreate";
             this.btnCreate.Size = new System.Drawing.Size(104, 44);
             this.btnCreate.TabIndex = 1;
@@ -113,7 +117,7 @@
             this.gbTotals.Controls.Add(this.rbNo);
             this.gbTotals.Controls.Add(this.rbYes);
             this.gbTotals.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbTotals.Location = new System.Drawing.Point(345, 118);
+            this.gbTotals.Location = new System.Drawing.Point(503, 118);
             this.gbTotals.Name = "gbTotals";
             this.gbTotals.Size = new System.Drawing.Size(200, 100);
             this.gbTotals.TabIndex = 4;
@@ -144,13 +148,50 @@
             this.rbNo.UseVisualStyleBackColor = true;
             this.rbNo.CheckedChanged += new System.EventHandler(this.rbNo_CheckedChanged);
             // 
+            // gbOrderBy
+            // 
+            this.gbOrderBy.Controls.Add(this.rbDescending);
+            this.gbOrderBy.Controls.Add(this.rbAscending);
+            this.gbOrderBy.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbOrderBy.Location = new System.Drawing.Point(270, 118);
+            this.gbOrderBy.Name = "gbOrderBy";
+            this.gbOrderBy.Size = new System.Drawing.Size(200, 100);
+            this.gbOrderBy.TabIndex = 5;
+            this.gbOrderBy.TabStop = false;
+            this.gbOrderBy.Text = "Sort order details in:";
+            // 
+            // rbDescending
+            // 
+            this.rbDescending.AutoSize = true;
+            this.rbDescending.Location = new System.Drawing.Point(7, 63);
+            this.rbDescending.Name = "rbDescending";
+            this.rbDescending.Size = new System.Drawing.Size(104, 22);
+            this.rbDescending.TabIndex = 1;
+            this.rbDescending.TabStop = true;
+            this.rbDescending.Text = "Descending";
+            this.rbDescending.UseVisualStyleBackColor = true;
+            this.rbDescending.CheckedChanged += new System.EventHandler(this.rbDescending_CheckedChanged);
+            // 
+            // rbAscending
+            // 
+            this.rbAscending.AutoSize = true;
+            this.rbAscending.Location = new System.Drawing.Point(7, 29);
+            this.rbAscending.Name = "rbAscending";
+            this.rbAscending.Size = new System.Drawing.Size(94, 22);
+            this.rbAscending.TabIndex = 0;
+            this.rbAscending.TabStop = true;
+            this.rbAscending.Text = "Ascending";
+            this.rbAscending.UseVisualStyleBackColor = true;
+            this.rbAscending.CheckedChanged += new System.EventHandler(this.rbAscending_CheckedChanged);
+            // 
             // frmReports
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(782, 450);
+            this.ClientSize = new System.Drawing.Size(782, 393);
+            this.Controls.Add(this.gbOrderBy);
             this.Controls.Add(this.gbTotals);
             this.Controls.Add(this.gbDetails);
             this.Controls.Add(this.lblHeading);
@@ -162,6 +203,8 @@
             this.gbDetails.PerformLayout();
             this.gbTotals.ResumeLayout(false);
             this.gbTotals.PerformLayout();
+            this.gbOrderBy.ResumeLayout(false);
+            this.gbOrderBy.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -178,5 +221,8 @@
         private System.Windows.Forms.GroupBox gbTotals;
         private System.Windows.Forms.RadioButton rbNo;
         private System.Windows.Forms.RadioButton rbYes;
+        private System.Windows.Forms.GroupBox gbOrderBy;
+        private System.Windows.Forms.RadioButton rbDescending;
+        private System.Windows.Forms.RadioButton rbAscending;
     }
 }
