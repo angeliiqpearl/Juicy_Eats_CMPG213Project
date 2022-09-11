@@ -28,25 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblNum = new System.Windows.Forms.Label();
+            this.lblName = new System.Windows.Forms.Label();
             this.lblHeading = new System.Windows.Forms.Label();
-            this.txtNum = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.btnLogin = new System.Windows.Forms.Button();
+            this.btnClose = new System.Windows.Forms.Button();
             this.txtSurname = new System.Windows.Forms.TextBox();
             this.lblSurname = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // lblNum
+            // lblName
             // 
-            this.lblNum.AutoSize = true;
-            this.lblNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNum.Location = new System.Drawing.Point(209, 82);
-            this.lblNum.Name = "lblNum";
-            this.lblNum.Size = new System.Drawing.Size(137, 20);
-            this.lblNum.TabIndex = 3;
-            this.lblNum.Text = "Employee Name:  ";
-            this.lblNum.Click += new System.EventHandler(this.label1_Click);
+            this.lblName.AutoSize = true;
+            this.lblName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.Location = new System.Drawing.Point(209, 82);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(137, 20);
+            this.lblName.TabIndex = 3;
+            this.lblName.Text = "Employee Name:  ";
+            this.lblName.Click += new System.EventHandler(this.label1_Click);
             // 
             // lblHeading
             // 
@@ -58,36 +58,36 @@
             this.lblHeading.TabIndex = 5;
             this.lblHeading.Text = "Juicy Eats Login";
             // 
-            // txtNum
+            // txtName
             // 
-            this.txtNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNum.Location = new System.Drawing.Point(379, 79);
-            this.txtNum.Name = "txtNum";
-            this.txtNum.Size = new System.Drawing.Size(181, 26);
-            this.txtNum.TabIndex = 0;
-            this.txtNum.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName.Location = new System.Drawing.Point(379, 79);
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(181, 26);
+            this.txtName.TabIndex = 0;
+            this.txtName.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // button1
+            // btnLogin
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(290, 195);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(89, 28);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Log In";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.Location = new System.Drawing.Point(290, 195);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(89, 28);
+            this.btnLogin.TabIndex = 2;
+            this.btnLogin.Text = "Log In";
+            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // btnClose
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(416, 196);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(71, 27);
-            this.button2.TabIndex = 6;
-            this.button2.Text = "Close";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnClose.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.Location = new System.Drawing.Point(416, 196);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(71, 27);
+            this.btnClose.TabIndex = 3;
+            this.btnClose.Text = "Close";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.button2_Click);
             // 
             // txtSurname
             // 
@@ -95,7 +95,7 @@
             this.txtSurname.Location = new System.Drawing.Point(379, 137);
             this.txtSurname.Name = "txtSurname";
             this.txtSurname.Size = new System.Drawing.Size(181, 26);
-            this.txtSurname.TabIndex = 7;
+            this.txtSurname.TabIndex = 1;
             // 
             // lblSurname
             // 
@@ -114,11 +114,11 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.txtSurname);
             this.Controls.Add(this.lblSurname);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.txtNum);
+            this.Controls.Add(this.btnClose);
+            this.Controls.Add(this.btnLogin);
+            this.Controls.Add(this.txtName);
             this.Controls.Add(this.lblHeading);
-            this.Controls.Add(this.lblNum);
+            this.Controls.Add(this.lblName);
             this.Name = "frmLogin";
             this.Text = "Log In";
             this.Load += new System.EventHandler(this.frmLogin_Load);
@@ -129,11 +129,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lblNum;
+        private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label lblHeading;
-        private System.Windows.Forms.TextBox txtNum;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.TextBox txtSurname;
         private System.Windows.Forms.Label lblSurname;
     }

@@ -47,6 +47,7 @@
             this.lblName.Size = new System.Drawing.Size(129, 20);
             this.lblName.TabIndex = 0;
             this.lblName.Text = "Employee Name:";
+            this.lblName.Click += new System.EventHandler(this.lblName_Click);
             // 
             // lblSurname
             // 
@@ -68,6 +69,7 @@
             this.lblType.Size = new System.Drawing.Size(121, 20);
             this.lblType.TabIndex = 2;
             this.lblType.Text = "Employee Type:";
+            this.lblType.Click += new System.EventHandler(this.lblType_Click);
             // 
             // cmbType
             // 
@@ -79,7 +81,8 @@
             this.cmbType.Location = new System.Drawing.Point(239, 180);
             this.cmbType.Name = "cmbType";
             this.cmbType.Size = new System.Drawing.Size(154, 28);
-            this.cmbType.TabIndex = 3;
+            this.cmbType.TabIndex = 2;
+            this.cmbType.SelectedIndexChanged += new System.EventHandler(this.cmbType_SelectedIndexChanged);
             // 
             // txtSurname
             // 
@@ -87,7 +90,8 @@
             this.txtSurname.Location = new System.Drawing.Point(239, 130);
             this.txtSurname.Name = "txtSurname";
             this.txtSurname.Size = new System.Drawing.Size(154, 26);
-            this.txtSurname.TabIndex = 4;
+            this.txtSurname.TabIndex = 1;
+            this.txtSurname.TextChanged += new System.EventHandler(this.txtSurname_TextChanged);
             // 
             // txtName
             // 
@@ -95,7 +99,8 @@
             this.txtName.Location = new System.Drawing.Point(239, 75);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(154, 26);
-            this.txtName.TabIndex = 5;
+            this.txtName.TabIndex = 0;
+            this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
             // 
             // btnHire
             // 
@@ -103,9 +108,10 @@
             this.btnHire.Location = new System.Drawing.Point(166, 236);
             this.btnHire.Name = "btnHire";
             this.btnHire.Size = new System.Drawing.Size(135, 35);
-            this.btnHire.TabIndex = 6;
+            this.btnHire.TabIndex = 3;
             this.btnHire.Text = "Hire Employee";
             this.btnHire.UseVisualStyleBackColor = true;
+            this.btnHire.Click += new System.EventHandler(this.btnHire_Click);
             // 
             // lblHeading
             // 
@@ -116,6 +122,7 @@
             this.lblHeading.Size = new System.Drawing.Size(207, 29);
             this.lblHeading.TabIndex = 12;
             this.lblHeading.Text = "Employee Hiring";
+            this.lblHeading.Click += new System.EventHandler(this.lblHeading_Click);
             // 
             // frmHireEmployees
             // 
@@ -132,6 +139,7 @@
             this.Controls.Add(this.lblName);
             this.Name = "frmHireEmployees";
             this.Text = "frmHireEmployees";
+            this.Load += new System.EventHandler(this.frmHireEmployees_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

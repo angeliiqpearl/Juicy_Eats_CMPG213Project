@@ -40,9 +40,10 @@
             this.btnDelete.Location = new System.Drawing.Point(81, 147);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(149, 30);
-            this.btnDelete.TabIndex = 20;
+            this.btnDelete.TabIndex = 1;
             this.btnDelete.Text = "Delete Supplier";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // lblHeading
             // 
@@ -71,7 +72,7 @@
             this.cmbSelect.Location = new System.Drawing.Point(65, 85);
             this.cmbSelect.Name = "cmbSelect";
             this.cmbSelect.Size = new System.Drawing.Size(191, 28);
-            this.cmbSelect.TabIndex = 17;
+            this.cmbSelect.TabIndex = 0;
             // 
             // frmDeleteSupplier
             // 
@@ -84,6 +85,7 @@
             this.Controls.Add(this.cmbSelect);
             this.Name = "frmDeleteSupplier";
             this.Text = "frmDeleteSupplier";
+            this.Load += new System.EventHandler(this.frmDeleteSupplier_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

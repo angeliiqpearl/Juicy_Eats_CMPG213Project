@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmAddInventory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddInventory.Designer.cs">
+      <DependentUpon>frmAddInventory.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAddSupplier.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,6 +114,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAddInventory.resx">
+      <DependentUpon>frmAddInventory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddSupplier.resx">
+      <DependentUpon>frmAddSupplier.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmDeleteInventory.resx">
       <DependentUpon>frmDeleteInventory.cs</DependentUpon>
     </EmbeddedResource>
@@ -128,6 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmOrder.resx">
       <DependentUpon>frmOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPurchaseInventory.resx">
+      <DependentUpon>frmPurchaseInventory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmReports.resx">
       <DependentUpon>frmReports.cs</DependentUpon>
