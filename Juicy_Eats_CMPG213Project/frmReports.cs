@@ -25,6 +25,44 @@ namespace Juicy_Eats_CMPG213Project
 
         private void btnCreate_Click(object sender, EventArgs e)
         {
+            if (rbSales.Checked)
+            {
+                if (rbYes.Checked)
+                {
+                    //show total for the sales
+                }
+
+                else if (rbNo.Checked)
+                {
+                    //do not show total for the sales
+                }
+            
+            }
+
+            else if (rbInventory.Checked)
+            {
+                //show the inventory in stock
+            
+            }
+        }
+
+        private void rbInventory_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rbSales_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rbYes_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rbNo_CheckedChanged(object sender, EventArgs e)
+        {
 
         }
     }
